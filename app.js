@@ -2,19 +2,35 @@ let sections = document.querySelectorAll('.main-section');
 let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+    let scrollPosition = window.innerHeight + window.pageYOffset;
+    let pageHeight = document.documentElement.scrollHeight;
 
-        if (top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
-        };
-    });
+    if (scrollPosition >= pageHeight - 2) {
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+        });
+        document.querySelector('header nav a[href="#contact"]').classList.add('active');
+    } else {
+        let activeSection = null;
+
+        sections.forEach(sec => {
+            let top = window.scrollY;
+            let offset = sec.offsetTop - 75;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute('id');
+
+            if (top >= offset && top < offset + height) {
+                activeSection = id;
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + activeSection) {
+                link.classList.add('active');
+            }
+        });
+    }
 };
 
 const observer = new IntersectionObserver((entries => {
