@@ -225,10 +225,17 @@ header {
   background-size: cover;
   padding-bottom: 100px;
 }
+
 .education p {
   width: 60%;
 }
 
+@media screen and (max-width: 749px) {
+  .education {
+    background-image: none;
+    background-color: #e9da07;
+  }
+}
 
 /* Contact Info
 ------------------------------------*/
