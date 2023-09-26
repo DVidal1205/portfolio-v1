@@ -146,7 +146,6 @@ nav a.active{
     scrollbar-color: #2A628F #F7FFF7; 
   }
 
-  /* Style the scrollbar thumb */
   nav::-webkit-scrollbar-thumb {
     background-color: #2A628F;
   }
@@ -157,7 +156,8 @@ nav a.active{
 
   nav a {
     font-size: 14px; 
-    margin-left: 15px; 
+    margin-left: 15px;
+    padding: 45px; 
   }
 }
 
