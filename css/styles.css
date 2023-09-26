@@ -202,6 +202,26 @@ header {
 }
 
 
+/* Hackathons 
+------------------------------------*/
+.hackathons {
+  background: #84acd1;
+}
+
+/* Hackathon items */
+.hackathon-item {
+  margin-bottom: 30px;
+}
+
+.hackathon-item h3 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.hackathon-item p {
+  margin: 0;
+}
+
 
 /* Work Experience
 ------------------------------------*/
