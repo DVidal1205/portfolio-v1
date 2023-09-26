@@ -130,6 +130,37 @@ nav a.active{
   color: rgb(59, 172, 248);
 }
 
+@media screen and (max-width: 750px) {
+  .navigation-bar {
+    padding: 10px; 
+  }
+  
+  .logo {
+    font-size: 20px; 
+  }
+
+  nav {
+    white-space: nowrap; 
+    overflow-x: auto; 
+    scrollbar-width: thin; 
+    scrollbar-color: #2A628F #F7FFF7; 
+  }
+
+  /* Style the scrollbar thumb */
+  nav::-webkit-scrollbar-thumb {
+    background-color: #2A628F;
+  }
+
+  nav::-webkit-scrollbar-track {
+    background-color: #F7FFF7;
+  }
+
+  nav a {
+    font-size: 14px; 
+    margin-left: 15px; 
+  }
+}
+
 
 /* Profile
 ------------------------------------*/
