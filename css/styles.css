@@ -100,11 +100,33 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: -100px;
 }
 
 .layer1 {
   background-image: url(../images/layer1.svg);
+  margin-bottom: -20vw;
+}
+
+.layer2 {
+  background-image: url(../images/layer2.svg);
+}
+
+.layer3 {
+  background-image: url(../images/layer3.svg);
+  margin-bottom: -20vw;
+}
+
+.layer4 {
+  background-image: url(../images/layer4.svg);
+}
+
+.layer5 {
+  background-image: url(../images/layer5.svg);
+  margin-bottom: -15vw;
+}
+
+.layer6 {
+  background-image: url(../images/layer6.svg);
 }
 
 /* Navigation Bar
@@ -259,22 +281,15 @@ header {
 /* Education
 ------------------------------------*/
 .education {
-  background-image: url(../images/joanna-kosinska-unsplash.jpg);
-  background-position: top right;
-  background-size: cover;
+  background-image: none;
+  background-color: #0b090a;
+  color: #F7FFF7;
   padding-bottom: 100px;
+  margin-bottom: -50px;
 }
 
 .education p {
   width: 60%;
-}
-
-@media screen and (max-width: 749px) {
-  .education {
-    background-image: none;
-    background-color: #0b090a;
-    color: #F7FFF7;
-  }
 }
 
 /* Contact Info
