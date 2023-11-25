@@ -92,6 +92,21 @@ h2 {
   border: none;
 }
 
+/* SVG Icons
+------------------------------------*/
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: -100px;
+}
+
+.layer1 {
+  background-image: url(../images/layer1.svg);
+}
+
 /* Navigation Bar
 ------------------------------------*/
 .navigation-bar {
@@ -100,7 +115,7 @@ h2 {
   left: 0;
   width: 100%;
   padding: 20px 120px;
-  background: #161a1d;
+  background: #131517;
   display: flex;
   justify-content: space-between;
   align-items: center;
