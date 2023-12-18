@@ -47,7 +47,7 @@ img {
   width: 300px;
 }
 a {
-  color: #3E92CC;
+  color: #9d4edd;
 }
 a:hover {
   text-decoration: none;
@@ -58,11 +58,11 @@ h1, h2 {
   margin: 0;
 }
 h1 {
-  font-size: 75px;
+  font-size: clamp(75px, 9vw, 1rem);
   line-height: 1;
 }
 h2 {
-  font-size: 35px;
+  font-size: clamp(35px, 6vw, 2rem);
 }
 
 .content-wrap {
@@ -85,11 +85,48 @@ h2 {
 }
 .divider > section {
   overflow: hidden;
-  border-bottom: 1px dashed #13293D;
+  border-bottom: 1px dashed #ffffff;
   padding: 25px 0;
 }
 .divider > section:last-of-type {
   border: none;
+}
+
+/* SVG Icons
+------------------------------------*/
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url(../images/layer1.svg);
+  margin-bottom: -20vw;
+}
+
+.layer2 {
+  background-image: url(../images/layer2.svg);
+}
+
+.layer3 {
+  background-image: url(../images/layer3.svg);
+  margin-bottom: -20vw;
+}
+
+.layer4 {
+  background-image: url(../images/layer4.svg);
+}
+
+.layer5 {
+  background-image: url(../images/layer5.svg);
+  margin-bottom: -15vw;
+}
+
+.layer6 {
+  background-image: url(../images/layer6.svg);
 }
 
 /* Navigation Bar
@@ -100,7 +137,7 @@ h2 {
   left: 0;
   width: 100%;
   padding: 20px 120px;
-  background: #13293D;
+  background: #131517;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -123,11 +160,11 @@ nav a {
 }
 
 nav a:hover{
-  color: rgb(59, 172, 248);
+  color: #9d4edd;
 }
 
 nav a.active{
-  color: rgb(59, 172, 248);
+  color: #9d4edd;
 }
 
 @media screen and (max-width: 750px) {
@@ -143,11 +180,11 @@ nav a.active{
     white-space: nowrap; 
     overflow-x: auto; 
     scrollbar-width: thin; 
-    scrollbar-color: #2A628F #F7FFF7; 
+    scrollbar-color: #161a1d #F7FFF7; 
   }
 
   nav::-webkit-scrollbar-thumb {
-    background-color: #2A628F;
+    background-color: #161a1d;
   }
 
   nav::-webkit-scrollbar-track {
@@ -165,16 +202,17 @@ nav a.active{
 /* Profile
 ------------------------------------*/
 header {
-  background: #2A628F;
+  background: #3c096c;
   color: #F7FFF7;
 }
 
 #self-portrait{
   padding: 10px 0;
-  border: #13293D;
   border-radius: 20px;
   width: 70%;
   max-height: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
 
@@ -184,10 +222,10 @@ header {
   background: #F7FFF7;
 }
 .projects a {
-  color: #2A628F;
+  color: #9d4edd;
 }
 .projects .btn {
-  background: #2A628F;
+  background: #3c096c;
   color: #F7FFF7;
   text-decoration: none;
   padding: 8px;
@@ -205,7 +243,8 @@ header {
 /* Hackathons 
 ------------------------------------*/
 .hackathons {
-  background: #84acd1;
+  background: #3c096c;
+  color: #F7FFF7;
 }
 
 /* Hackathon items */
@@ -226,13 +265,15 @@ header {
 /* Work Experience
 ------------------------------------*/
 .work-experience {
-  background: #A1C6D7;
+  background: #161a1d;
+  color: #F7FFF7;
 }
 
 /* Relevant Skills / Coursework
 ------------------------------------*/
 .relevant-skills {
-  background: #1982b3c9;
+  background: #7b2cbf;
+  color: #F7FFF7;
 }
 
 
@@ -240,27 +281,21 @@ header {
 /* Education
 ------------------------------------*/
 .education {
-  background-image: url(../images/joanna-kosinska-unsplash.jpg);
-  background-position: top right;
-  background-size: cover;
+  background-image: none;
+  background-color: #0b090a;
+  color: #F7FFF7;
   padding-bottom: 100px;
+  margin-bottom: -50px;
 }
 
 .education p {
   width: 60%;
 }
 
-@media screen and (max-width: 749px) {
-  .education {
-    background-image: none;
-    background-color: #e9da07;
-  }
-}
-
 /* Contact Info
 ------------------------------------*/
 footer {
-  background: #13293D;
+  background: #45136d;
   color: #F7FFF7;
 }
 .contact-list {
@@ -276,7 +311,7 @@ footer {
 }
 
 .contact-list a:hover{
-  color: rgb(59, 172, 248);
+  color: #9d4edd;
 }
 
 
